@@ -1,0 +1,128 @@
+:root{
+    --color-60:#F0E7E9;
+    --color-60hover:#DCD3D5;
+    --color-30:#D30001;
+    --color-10:#261B23;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main-box{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.form-box > button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: var(--color-30);
+    color: var(--color-60);
+    font-weight: bold;
+}
+
+.form-box > button:hover{
+    border-radius: 10px;
+    background: var(--color-10);
+    animation: changecolor 0.4s; 
+    cursor: pointer;
+}
+
+.form > input{
+    width: 250px;
+    height: 20px;
+    outline: none;
+    padding-left: 5px;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.list-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--color-10);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.list-box > ul > p{
+    text-align: center;
+}
+
+.list-box > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.list-box > ul > li{ 
+    list-style-type: none;
+    border: none;
+    border-bottom: solid 1px var(--color-10);
+    padding: 5px;
+    text-align: center;
+}
+
+.list-box > ul > li:hover{
+    background: var(--color-60hover);
+    color: var(--color-30);
+    border-bottom: solid 1px var(--color-30);
+    border-radius: 10px 10px  0 0;
+    cursor: grab;
+}
+
+@keyframes changecolor {
+    0% {
+        border-radius:0px ;
+        background-color: var(--color-30);
+    }
+
+    100% {
+        border-radius:10px ;
+        background-color: var(--color-10);
+    }
+}
+
+/* ===================================================================================================================== */
+
+@media only screen and (max-width: 700px) {
+    
+.content-box{
+    width: 90%;
+}
+
+.form > input{
+    width: 99%;
+    
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.form-box > button{
+    width: 100%;
+}
+
+}
