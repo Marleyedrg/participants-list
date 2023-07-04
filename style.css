@@ -109,20 +109,20 @@
 
 @media only screen and (max-width: 700px) {
     
-.content-box{
-    width: 90%;
-}
+    .content-box{
+        width: 90%;
+    }
 
-.form > input{
-    width: 99%;
-    
-    outline: none;
-    border: none;
-    border-bottom: 1px solid;
-}
+    .form > input{
+        width: 99%;
+        
+        outline: none;
+        border: none;
+        border-bottom: 1px solid;
+    }
 
-.form-box > button{
-    width: 100%;
-}
+    .form-box > button{
+        width: 100%;
+    }
 
 }
