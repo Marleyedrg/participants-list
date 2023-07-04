@@ -2,6 +2,8 @@
 
 ### É uma aplicação para gerar uma lista de participantes de um determinado evento. Tal lista terá o recurso de arrastar e soltar afim de organizar a prioridade dos participantes na lista.
 
+### Link para ir para a aplicação <a href="https://raphaelazambuja.github.io/participants-list/" target="_blank">lista poggers</a>
+
 #
 
 ### Como a aplicação ainda está longe de estar terminada ainda haverá atualizações no README.

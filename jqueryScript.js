@@ -15,7 +15,7 @@ $("#button").click(() => {
   var button = $('<button>', {
     text: 'Clique Aqui',
     class: 'btn',
-    click: function() {
+    focus: function() {
       sortable_list();
     }
   });
