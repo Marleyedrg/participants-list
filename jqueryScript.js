@@ -26,6 +26,8 @@ $("#button").click(() => {
   show_message();
 });
 
+// functions ---------------------------
+
 function updateParticipantList() {
   var participantOrder = [];
   $("#list").find('li').each(function() {
