@@ -5,6 +5,10 @@
     --color-10:#261B23;
 }
 
+body{
+    overflow-x: hidden; 
+}
+
 *{
     padding: 0;
     margin: 0;
