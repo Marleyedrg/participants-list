@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!------------>
 
-    <script src="jqueryScript.js" defer></script>
+    <script src="checksData.js" defer></script>
     <link rel="stylesheet" href="./style.css">
 
     <title>Poggers Drag and Drop</title>
@@ -39,17 +39,23 @@
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" ></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" ></script>
 <script>
-    var participant = [];
+var participant = [];
 
 sortable_list();
 
 $("#button").click(() => {
-  let participant_datas = $("#name").val() + " " + $("#office").val() + " " + $("#entity").val() + " " + $("#local").val();
+
+  if($("#name").val() === ''){
+    return;//checks if the input name is empty.
+  }
+
+  let participant_datas = checksData();
 
   participant.push(participant_datas);
 
   var listItem = $('<li>', {
     id: 'item-list-' + (participant.length - 1),
+    class: 'participant-box',
     text: participant_datas
   });
 
